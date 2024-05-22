@@ -1,0 +1,136 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Editar Cadastro";
+}
+<div class="row">
+    <div class="col-12 my-3">
+        <h4>Pessoas Cadastradas</h4>
+    </div>
+
+    <div class="col-12">
+        <div class="card border-0">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-success d-flex align-items-center" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                            </svg>
+                            <span class="ms-1">Endereço</span>
+                        </button>
+                    </div>
+
+                    <div class="table-responsive my-4">
+                        <table class="mb-0 table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>CEP</th>
+                                    <th>Endereço</th>
+                                    <th>Cidade</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>07415-250</td>
+                                    <td>Rua Abobrinha</td>
+                                    <td>Espanha</td>
+                                    <td>Abacaxi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>07415-250</td>
+                                    <td>Rua Maça</td>
+                                    <td>Portugal</td>
+                                    <td>Maça</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>07415-250</td>
+                                    <td>Rua Abobrinha</td>
+                                    <td>Espanha</td>
+                                    <td>Abacaxi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>07415-250</td>
+                                    <td>Rua Abobrinha</td>
+                                    <td>Espanha</td>
+                                    <td>Abacaxi</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>07415-250</td>
+                                    <td>Rua Abobrinha</td>
+                                    <td>Espanha</td>
+                                    <td>Abacaxi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+     style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar Endereço</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+
+                        <div class="mb-3 col-6">
+                            <label for="cepCliente" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="cepCliente" required>
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="enderecoCliente" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="enderecoCliente" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="cidadeCliente" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidadeCliente" required>
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="estadoCliente" class="form-label">Estado</label>
+                            <input type="text" class="form-control" id="estadoCliente" required>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger d-flex align-items-center mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         viewBox="0 0 384 512">
+                        <!--!Font Awesome Free 6.5.2 by @@fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                    <span>Fechar</span>
+                </button>
+                <button type="submit" class="btn btn-success d-flex align-items-center mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.2 by @@fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32H64zm0 96c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V128zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg>
+                    <span class="ms-1">Registrar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

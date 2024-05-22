@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Registrar Cadastro";
+
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0">
+            <div class="pt-4 pb-4 text-center card-header card-header-signup">
+                <a class=""
+                   href="/hyper_react/">
+                    <span>
+
+                    </span>
+                </a>
+            </div>
+            <div class="p-4 card-body">
+                <div class="text-center w-75 m-auto">
+                    <h4 class="text-dark-50 text-center mt-0 fw-bold">Registrar cliente</h4>
+                    <p class="text-muted mb-4">Preencha os dados abaixo para criar um novo registro.</p>
+                </div>
+                <form>
+                    <div class="mb-3 col-12">
+                        <label for="nomeCliente" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nomeCliente" required>
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="telefonCliente" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefonCliente" required>
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="cpfCliente" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpfCliente" required>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-success d-flex align-items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32H64zm0 96c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V128zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" /></svg>
+                            <span class="ms-1">Registrar</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
