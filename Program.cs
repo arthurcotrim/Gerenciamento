@@ -1,7 +1,14 @@
+using Gerenciamento.Context;
+using Gerenciamento.Repositories.Address;
+using Gerenciamento.Repositories.Person;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<DataContext>();
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 
 var app = builder.Build();
 
